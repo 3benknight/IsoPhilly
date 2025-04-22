@@ -19,8 +19,8 @@ function Home() {
           <h1>IsoPhilly</h1>
           <div className="small-bar" />
           <p>
-            Analysing Philadelphia’s socioeconomic and real‐estate indicators on an
-            Isochrome level
+            Analyzing Philadelphia’s Socioeconomic and Real‐Estate Indicators on an
+            Isochrome Level
           </p>
           <Button
             variant="dark"
