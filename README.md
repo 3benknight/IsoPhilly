@@ -16,4 +16,4 @@
 <!-- ------------------------>
 <!-- ------------------------>
 
-Knight, B., Duggineni, O., Doggart, J.Isophilly: Communicating Philidelphia's economic indicators at the isochrome level through interactive dashboards.
+Knight, B., Duggineni, O., Doggart, J., Isophilly: Communicating Philidelphia's economic indicators at the isochrome level through interactive dashboards. Journal N/A DOI: N/A
