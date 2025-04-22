@@ -1,0 +1,38 @@
+.dashboard-background {
+    position: relative;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    overflow: auto !important;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+}
+
+.dashboard-selection {
+    position: relative;
+    height:5%;
+    width:95%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    margin: 0;
+    border-radius: 9px;
+    background-color: rgb(34, 34, 34);
+    align-items: center;
+    color: rgb(254, 254, 254);
+    font-size: 100%;
+    font-weight: 600;
+    white-space: pre-wrap;
+}
+
+.dashboard-selection-text {
+    position: relative;
+    height:100%;
+    width:100%;
+    padding-left: 4%;
+    text-align: left;
+}
