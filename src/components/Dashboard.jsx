@@ -1,17 +1,29 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { setCensusRegion } from "./Store";
+import { Container, Row } from "react-bootstrap";
 import './css/Dashboard.css';
+import LeafletDashboard from './mapping/Leaflet';
+import "leaflet/dist/leaflet.css";
 
 function Dashboard({selectedRegion, setCensusRegion}) {
   return (
     <div className="dashboard-background">
-      <div title="Change selected parameter" className="dashboard-selection">
-        <div className="dashboard-selection-text">
-          CURRENTLY SELECTED REGION: {selectedRegion === "none" ? 
-          "No Census Block Selected. Click a region on the map to select one." : selectedRegion}
-        </div>
-      </div>
+      <Container fluid>
+        <Row title="Change selected parameter" className="dashboard-selection">
+          <div className="dashboard-selection-text">
+            CURRENTLY SELECTED REGION: {selectedRegion === "none" ? 
+            "No Census Block Selected. Click a region on the map to select one." : selectedRegion}
+          </div>
+        </Row>
+        <Row className="dashboard-map-wrapper">
+          <LeafletDashboard
+            mapId={"map"}
+            selectedCensusBlock={selectedRegion}
+            setCensusBlock={setCensusRegion}
+          />
+        </Row>
+      </Container>
     </div>
   );
 }
